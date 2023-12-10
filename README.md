@@ -1,12 +1,10 @@
 # EWHA_ML_07
-This is the repository of team 7 기괴학습.</br>
-
-We classify 95 websites in closed-world scenario. </br>
-In open-world scenario, we classify whether the site is monitored or not and classify if the site is monitored, and if it is monitored, we classify which site it is. It depends on the dataset.
+This is the repository of the team 7 기괴학습.</br>
 
 ## 📌Introduction
+The aim of the project is to create a machine learning model using network packet flow data detected by Tor, to determine whether the arbitrary data is being monitored by Tor and to identify its destination.
 ### 🌐Closed-world scenario
-For the closed-world experiments, the objective is to classify the 95 monitored websites.
+For the closed-world experiments, the objective is to classify the 95 monitored websites.</br>
 We run three models for closed-world setting, the file starts with the prefix `closed_`.
 
 ### 🌐Open-world scenario
@@ -27,9 +25,17 @@ For multi-class classification, the file starts with the prefix `open_multi`.
 - You need `colab` to run the files.
 - If you run `load_pickle_code_hw.ipynb` in `Feature Extraction` folder, you can obtain the file `mon.csv` which is used for the files starts with the prefix `closed_`.
 - If you run `load_pickle_code_hw_unmon.ipynb` in `Feature Extraction` folder, you can obtain the files `unmon.csv` and `unmon2.csv` which are used for the files starts with the prefix `open_`.
+- You can find this code in file named `load_pickle_code_hw.ipynb` and `load_pickle_code_hw_unmon.ipynb`.
+```
+with open('/content/drive/MyDrive/Colab Notebooks/2023_2_ML/mon_standard10.pkl', 'rb') as f: 
+```
+```
+with open('/content/drive/MyDrive/Colab Notebooks/2023_2_ML/unmon_standard10.pkl', 'rb') as f:
+```
+You need to replace the name of the path in this code with the absolute path in the file `mon_standard10.pkl` and `unmon_standard10.pkl` on your drive.
 - After obtain the files, you should upload them on your google drive.
-- You can find this code in every file exclude the files in Feature Extraction folder.
+- You can find this code in every file in `DecisionTree`, `KNN`, `RandomForest` folder.
   ```
   pd.read_csv("/content/drive/MyDrive/Machine Learning/팀 과제/mon.csv", header=None)
   ```
-  Please replace `"/content/drive/MyDrive/Machine Learning/팀 과제/mon.csv"` with your file path.
+  Please replace `"/content/drive/MyDrive/Machine Learning/팀 과제/mon.csv"` with the absolute path in the file `mon.csv`, `unmon.csv`, `unmon2.csv` on your drive.
