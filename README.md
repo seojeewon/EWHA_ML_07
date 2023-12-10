@@ -34,7 +34,7 @@ with open('/content/drive/MyDrive/Colab Notebooks/2023_2_ML/mon_standard10.pkl',
 with open('/content/drive/MyDrive/Colab Notebooks/2023_2_ML/unmon_standard10.pkl', 'rb') as f:
 ```
 You need to replace the path in this code with the absolute path of the files `mon_standard10.pkl` and `unmon_standard10.pkl` on your drive.</br> </br>
-⚠️If there's any problem for running files in `Feature Extraction` folder, you can use the results of feature extraction in the `Features` folder for following steps.
+⚠️If there's any problem when running files in `Feature Extraction` folder, you can use the results of feature extraction in the `Features` folder for following steps.
 - After obtaining the files `mon.csv`, `unmon.csv`, and `unmon2.csv`, you should upload them on your google drive.
 - You can find this code below in every file in `DecisionTree`, `KNN`, `RandomForest` folders.
   ```
