@@ -24,8 +24,8 @@ Files for multi-class classification start with the prefix `open_multi`.
 
 ## 📌How to run
 - You need `colab` to run the files.
-- If you run `load_pickle_code_hw.ipynb` in `Feature Extraction` folder, you can obtain the file `mon.csv` which is used for the files that start with the prefix `closed_`.
-- If you run `load_pickle_code_hw_unmon.ipynb` in `Feature Extraction` folder, you can obtain the files `unmon.csv` and `unmon2.csv` which are used for the files that start with the prefix `open_`.
+- If you run `load_pickle_code_hw.ipynb` in `Feature Engineering` folder, you can obtain the file `mon.csv` which is used for the files that start with the prefix `closed_`.
+- If you run `load_pickle_code_hw_unmon.ipynb` in `Feature Engineering` folder, you can obtain the files `unmon.csv` and `unmon2.csv` which are used for the files that start with the prefix `open_`.
 - You can find this code below in the files named `load_pickle_code_hw.ipynb` and `load_pickle_code_hw_unmon.ipynb`.
 ```
 with open('/content/drive/MyDrive/Colab Notebooks/2023_2_ML/mon_standard10.pkl', 'rb') as f: 
@@ -34,7 +34,7 @@ with open('/content/drive/MyDrive/Colab Notebooks/2023_2_ML/mon_standard10.pkl',
 with open('/content/drive/MyDrive/Colab Notebooks/2023_2_ML/unmon_standard10.pkl', 'rb') as f:
 ```
 You need to replace the path in this code with the absolute path of the files `mon_standard10.pkl` and `unmon_standard10.pkl` on your drive.</br> </br>
-⚠️If there's any problem when running files in `Feature Extraction` folder, you can use the results of feature extraction in the `Features` folder for following steps.
+⚠️If there's any problem when running files in `Feature Engineering` folder, you can use the results of feature engineering in the `Features` folder for following steps.
 - After obtaining the files `mon.csv`, `unmon.csv`, and `unmon2.csv`, you should upload them on your google drive.
 - You can find this code below in every file in `DecisionTree`, `KNN`, `RandomForest` folders.
   ```
